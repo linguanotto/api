@@ -56,11 +56,9 @@
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#bicicletas">Bicicletas</a></li>
           <li><a class="nav-link scrollto" href="#GuiaparaUtilizaroSite">Guia para Utilizar o Site</a></li>
-          <li><a class="nav-link scrollto"  href="#equipe">Equipe De Desenvolvimento</a></li>
-          
-          
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><a class="nav-link scrollto" href="#equipe">Equipe De Desenvolvimento</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Fale Conosco</a></li>
+          <li><a class="getstarted scrollto" href="#about">Cadastre-se</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -96,74 +94,81 @@
   </section><!-- End Hero -->
 
   <main id="main">
-<!-- ======= Bicicleta Section ======= -->
-<section id="bicicletas" >
-    <!-- ======= componente datas ======= -->
-     
+    <!-- ======= Bicicleta Section ======= -->
+    <section id="bicicletas">
+      <!-- ======= componente datas ======= -->
+
       <!--  <faixa azul">-->
-        <nav id="navbar" class="navbar d-flex justify-content-center clients clients" >
-          <ul>
-
-      <select class="custom-select" id="sltModalidade">
-        <option selected disabled>Modalidade</option>
-        <option value="MTB">MTB</option>
-        <option value="Estrada">estrada</option>
-        <option value="Triathlon">Triathlon</option>
-        <option value="Gravel">Gravel</option>
-        <option value="MTB Elétrica">MTB Elétrica</option>
-        <option value="Urbana">Urbana</option>
-        <option value="Estrada Elétrica">Estrada Elétrica</option>
-        <option value="Urbana Elétrica">Urbana Elétrica</option>
-        <option value="Gravel Elétrica">Gravel Elétrica</option>
-        <option value="Downhill">Downhill</option>
-        <option value="Infantil">Infantil</option>
-        <option value="Vintage">Vintage</option>
-        <option value="BMX">BMX</option>
-        <option value="Fixa">Fixa</option>
-        <option value="Enduro/Trail">Enduro/Trail</option>
-      </select>
-
-      <select class="custom-select" id="sltQuadro">
-        <option selected disabled>Quadro</option>
-        <option value="02">02</option>
-      </select>
-
-      <select class="custom-select" id="sltMarca">
-        <option selected disabled>Marca</option>
-        <option value="Caloi">Caloi</option>
-      </select>
-
-      <select class="custom-select" id="sltAro">
-        <option selected disabled>Aro</option>
-        <option value="29">29</option>
-      </select>
-
-      <select class="custom-select" id="sltMaterialDoQuadro">
-        <option selected disabled>Material Do Quadro</option>
-        <option value="carbono">Carbono</option>
-      </select>
-
-     
 
 
 
+      <div class="col-lg-12 col-sm-12 clients clients">
+        <div class="row justify-content-center">
+          <div class="col-lg-2 col-sm-2 data">
+            <!-- <label for="startDate">Start</label> -->
+            <input id="startDate" class="form-control" type="date" />
+            <span id="startDateSelected"></span>
+          </div>
+          <div class="col-lg-2 col-sm-2 data">
+            <!--  <label for="endDate">End</label> -->
+            <input id="endDate" class="form-control" type="date" />
+            <span id="endDateSelected"></span>
+          </div>
+        </div>
 
+        <div class="row justify-content-center modalidade">
+          <select class="col-lg-2 col-sm-2 custom-select btn-get-started" id="sltModalidade">
 
-          <li><a class="navbar getstarted scrollto" href="#about">Get Started</a></li>
-        </ul>
-      </nav><!-- .navbar -->
+            <option selected disabled>Modalidade</option>
+            <option value="MTB">MTB</option>
+            <option value="Estrada">estrada</option>
+            <option value="Triathlon">Triathlon</option>
+            <option value="Gravel">Gravel</option>
+            <option value="MTB Elétrica">MTB Elétrica</option>
+            <option value="Urbana">Urbana</option>
+            <option value="Estrada Elétrica">Estrada Elétrica</option>
+            <option value="Urbana Elétrica">Urbana Elétrica</option>
+            <option value="Gravel Elétrica">Gravel Elétrica</option>
+            <option value="Downhill">Downhill</option>
+            <option value="Infantil">Infantil</option>
+            <option value="Vintage">Vintage</option>
+            <option value="BMX">BMX</option>
+            <option value="Fixa">Fixa</option>
+            <option value="Enduro/Trail">Enduro/Trail</option>
+          </select>
 
+          <select class="col-lg-1 col-sm-1 custom-select btn-get-started" id="sltQuadro">
+            <option selected disabled>Quadro</option>
+            <option value="02">02</option>
+          </select>
 
+          <select class="col-lg-1 col-sm-1 custom-select btn-get-started" id="sltMarca">
+            <option selected disabled>Marca</option>
+            <option value="Caloi">Caloi</option>
+          </select>
 
+          <select class="col-lg-1 col-sm-1 custom-select btn-get-started" id="sltAro">
+            <option selected disabled>Aro</option>
+            <option value="29">29</option>
+          </select>
 
+          <select class="col-lg-2 col-sm-2 custom-select btn-get-started" id="sltMaterialDoQuadro">
+            <option selected disabled>Material Do Quadro</option>
+            <option value="carbono">Carbono</option>
+          </select>
+        </div>
 
+        <div class="row justify-content-center pesquisar2">
+          <a class="col-lg-5 col-sm-12 pesquisar getstarted scrollto " href="#about">Pesquisar</a>
+        </div>
       </div>
 
 
 
-  
 
-    
+
+
+
       <div class="container portfolio">
 
         <div class="section-title" data-aos="fade-up">
@@ -284,18 +289,24 @@
 
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            
+
             <h3> Para os locadores</h3>
-              <p>
-               Depois de concluir o processo de registro, basta navegar até a seção "Bicicletas" e escolher a data desejada. Além disso, oferecemos a opção de filtrar as bicicletas com base em características como tipo de quadro, tamanho do aro, material do quadro, e muito mais. Uma vez feito isso, apresentaremos as melhores opções de bicicletas de acordo com suas preferências. Você pode simplesmente selecionar a bicicleta desejada e entrar em contato com o proprietário para iniciar a negociação.
+            <p>
+              Depois de concluir o processo de registro, basta navegar até a seção "Bicicletas" e escolher a data
+              desejada. Além disso, oferecemos a opção de filtrar as bicicletas com base em características como tipo de
+              quadro, tamanho do aro, material do quadro, e muito mais. Uma vez feito isso, apresentaremos as melhores
+              opções de bicicletas de acordo com suas preferências. Você pode simplesmente selecionar a bicicleta
+              desejada e entrar em contato com o proprietário para iniciar a negociação.
             </p>
             <a href="#bicicletas" class="btn-learn-more">Bicicletas</a>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <h3> Para proprietários de bicicletas</h3>
             <p>
-               Após concluir o cadastro, basta acessar a seção "Anuncie Sua Bicicleta". Lá, você pode adicionar fotos, preencher os detalhes e incluir uma descrição. Após concluir essas etapas, basta aguardar. Seu anúncio estará visível em breve.
-          </p>
+              Após concluir o cadastro, basta acessar a seção "Anuncie Sua Bicicleta". Lá, você pode adicionar fotos,
+              preencher os detalhes e incluir uma descrição. Após concluir essas etapas, basta aguardar. Seu anúncio
+              estará visível em breve.
+            </p>
             <a href="#" class="btn-learn-more">Anuncie sua bicicleta</a>
           </div>
         </div>
@@ -321,7 +332,8 @@
                     <i class="bi bi-emoji-smile"></i>
                     <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1"
                       class="purecounter"></span>
-                    <p><strong>Sem taxas</strong> para o usuario, a negociação é feita diretamente com os usuarios sem nenhum custo.</p>
+                    <p><strong>Sem taxas</strong> para o usuario, a negociação é feita diretamente com os usuarios sem
+                      nenhum custo.</p>
                   </div>
                 </div>
 
@@ -349,7 +361,8 @@
                     <i class="bi bi-award"></i>
                     <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
                       class="purecounter"></span>
-                    <p><strong>15 modelos de bicicletas</strong> , Atendemos tanto atletas de alto rendimento quanto ciclistas casuais. Aqui, você encontrará a bicicleta perfeita para suas necessidades.</p>
+                    <p><strong>15 modelos de bicicletas</strong> , Atendemos tanto atletas de alto rendimento quanto
+                      ciclistas casuais. Aqui, você encontrará a bicicleta perfeita para suas necessidades.</p>
                   </div>
                 </div>
               </div>
@@ -359,7 +372,7 @@
 
       </div>
     </section><!-- End Counts Section -->
-    
+
 
     <!-- ======= Team Section ======= -->
     <section id="equipe" class="team section-bg">
@@ -371,12 +384,12 @@
         </div>
 
         <div class="row d-flex justify-content-center">
- 
+
 
           <div class="col-lg-2 col-md-2">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/flavioLinguanotto.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-github"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
@@ -399,8 +412,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Beatriz</h4>
+                <span>product owner</span>
               </div>
             </div>
           </div>
@@ -415,8 +428,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Igor Fonseca</h4>
+                <span>Desenvolvedor</span>
               </div>
             </div>
           </div>
@@ -431,8 +444,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4>Marcelo Torrieli</h4>
+                <span>Desenvolvedor</span>
               </div>
             </div>
           </div>
@@ -440,15 +453,15 @@
           <div class="col-lg-2 col-md-2">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
               <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/Thiago.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-github"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
+                <h4>Thiago Brito</h4>
+                <span>Desenvolvedor</span>
               </div>
             </div>
           </div>
@@ -458,7 +471,7 @@
       </div>
     </section><!-- End Team Section -->
 
-    
+
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
@@ -475,7 +488,9 @@
           </div>
           <div class="col-lg-7">
             <p>
-              Para cadastrar sua bicicleta em nosso site, basta criar uma conta e, em seguida, acessar a seção "Anuncie Sua Bicicleta". Lá, você pode adicionar fotos, preencher os detalhes da bicicleta e incluir uma descrição. Após concluir essas etapas, seu anúncio estará visível em breve.
+              Para cadastrar sua bicicleta em nosso site, basta criar uma conta e, em seguida, acessar a seção "Anuncie
+              Sua Bicicleta". Lá, você pode adicionar fotos, preencher os detalhes da bicicleta e incluir uma descrição.
+              Após concluir essas etapas, seu anúncio estará visível em breve.
             </p>
           </div>
         </div><!-- End F.A.Q Item-->
@@ -487,7 +502,8 @@
           </div>
           <div class="col-lg-7">
             <p>
-              Não, nosso site não cobra nenhuma taxa para os usuários que desejam alugar uma bicicleta. O uso do site é totalmente gratuito para locatários.
+              Não, nosso site não cobra nenhuma taxa para os usuários que desejam alugar uma bicicleta. O uso do site é
+              totalmente gratuito para locatários.
             </p>
           </div>
         </div><!-- End F.A.Q Item-->
@@ -499,7 +515,8 @@
           </div>
           <div class="col-lg-7">
             <p>
-              Levamos a segurança dos dados dos usuários a sério. Utilizamos criptografia para proteger informações pessoais e implementamos medidas de segurança robustas para manter suas informações seguras.
+              Levamos a segurança dos dados dos usuários a sério. Utilizamos criptografia para proteger informações
+              pessoais e implementamos medidas de segurança robustas para manter suas informações seguras.
             </p>
           </div>
         </div><!-- End F.A.Q Item-->
@@ -511,7 +528,8 @@
           </div>
           <div class="col-lg-7">
             <p>
-              Você pode entrar em contato com o proprietário da bicicleta diretamente através do nosso site. Basta selecionar a bicicleta desejada e utilizar a função de mensagens para iniciar a conversa.
+              Você pode entrar em contato com o proprietário da bicicleta diretamente através do nosso site. Basta
+              selecionar a bicicleta desejada e utilizar a função de mensagens para iniciar a conversa.
             </p>
           </div>
         </div><!-- End F.A.Q Item-->
@@ -523,7 +541,9 @@
           </div>
           <div class="col-lg-7">
             <p>
-              Sim, muitos de nossos anunciantes oferecem opções de aluguel flexíveis, incluindo períodos curtos, como algumas horas. Você pode encontrar bicicletas disponíveis para atender às suas necessidades específicas de aluguel de tempo.
+              Sim, muitos de nossos anunciantes oferecem opções de aluguel flexíveis, incluindo períodos curtos, como
+              algumas horas. Você pode encontrar bicicletas disponíveis para atender às suas necessidades específicas de
+              aluguel de tempo.
             </p>
           </div>
         </div><!-- End F.A.Q Item-->
@@ -536,21 +556,22 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Contact Us</h2>
+          <h2>Fale Conosco</h2>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="contact-about">
-              <h3>Vesperr</h3>
-              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque
-                felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+              <h3>Terra SoftHouse</h3>
+              <p>
+                A equipe Terra Softhouse é um grupo de talentosos desenvolvedores de software que teve origem na Fatec
+                (Faculdade de Tecnologia) durante o curso de Desenvolvimento de Software. A equipe foi formada por
+                estudantes apaixonados por tecnologia e programação, que compartilhavam o objetivo de criar soluções
+                inovadoras e de alta qualidade no mundo da tecnologia da informação.</p>
               <div class="social-links">
-                <a href="#" class="twitter"><i class="bi bi-github"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/projetoPDali" class="twitter"><i class="bi bi-github"></i></a>
+
               </div>
             </div>
           </div>
@@ -559,17 +580,19 @@
             <div class="info">
               <div>
                 <i class="ri-map-pin-line"></i>
-                <p>A108 Adam Street<br>New York, NY 535022</p>
+                <p>R: Faria Lima, 155 - Jardim Santa Maria<br>Jacareí-SP 12328-070</p>
               </div>
 
               <div>
                 <i class="ri-mail-send-line"></i>
-                <p>info@example.com</p>
+                <p>pdali.bike@gmail.com</p>
               </div>
 
               <div>
-                <i class="ri-phone-line"></i>
-                <p>+1 5589 55488 55s</p>
+                <a href="https://wa.me/11982175526">
+                  <i class="ri-phone-line"></i>
+                  <p>(11) 98217-5526</p>
+                </a>
               </div>
 
             </div>
@@ -578,23 +601,23 @@
           <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nome" required>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensagem" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Enviar</button></div>
             </form>
           </div>
 
@@ -611,7 +634,7 @@
       <div class="row d-flex align-items-center">
         <div class="col-lg-6 text-lg-left text-center">
           <div class="copyright">
-            &copy; Copyright <strong>Vesperr</strong>. All Rights Reserved
+            &copy; Copyright <strong>Terra SoftHouse</strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->

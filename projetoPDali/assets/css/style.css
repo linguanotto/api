@@ -129,6 +129,27 @@ h6 {
   list-style: none;
   align-items: center;
 }
+.pesquisar {
+  background: #4B9282;
+  padding: 8px 25px;
+
+  border-radius: 50px;
+  color: #fff;
+  margin-left: 8px;
+  margin-right: 8px;
+
+}
+
+.pesquisar2{
+  display:  block;
+}
+
+.modalidade {
+ padding-top: 8px;
+ padding-bottom: 8px;
+ margin-left: 8px;
+ margin-bottom: 8px;
+}
 
 .navbar li {
   position: relative;
@@ -373,7 +394,22 @@ h6 {
   margin-bottom: 50px;
   font-size: 24px;
 }
-
+#bicicletas .btn-get-started {
+  margin-right : 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #4B9282;
+  border: 2px solid #4B9282;
+  margin-bottom: 8px;
+  margin-top: 8px;
+ }
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -466,7 +502,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f7fbfe;
+  background-color: #F1F9F6;
 }
 
 .section-title {
@@ -507,18 +543,26 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: #f3f9fd;
-  padding: 10px 0;
+  background: #F1F9F6;
+  padding:  10px ;
   text-align: center !important;
   align-items: center !important;
-
 }
+
+
 
 .clients .col-lg-2 {
   /*display: flex;*/
   align-items: center;
   justify-content: center;
 }
+
+
+
+.clients .data {
+ margin-right: 8px;
+}
+
 
 
 
