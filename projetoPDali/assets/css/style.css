@@ -1648,3 +1648,37 @@ section {
 #footer .footer-links a:hover {
   color: #4B9282;
 }
+
+
+.col-auto {
+margin-left: 0px;
+}
+
+.caixa {
+  align-items: baseline;
+  margin-top: 8px;
+  }
+
+
+
+
+
+
+.avaliacao {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.estrela {
+  color: gray;
+}
+
+.estrela:hover,
+.estrela.active {
+  color: gold;
+}
+
+
+
+
+

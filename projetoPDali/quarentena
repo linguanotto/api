@@ -15,3 +15,82 @@
             </div>
         
           </div>
+
+
+
+
+
+
+
+          <!--avaliação 5 estrelas -->
+
+          <div class="avaliacao">
+            <span class="estrela" data-valor="1">&#9733;</span>
+            <span class="estrela" data-valor="2">&#9733;</span>
+            <span class="estrela" data-valor="3">&#9733;</span>
+            <span class="estrela" data-valor="4">&#9733;</span>
+            <span class="estrela" data-valor="5">&#9733;</span>
+          </div>
+
+          
+
+
+          .avaliacao {
+            font-size: 24px;
+            cursor: pointer;
+          }
+          
+          .estrela {
+            color: gray;
+          }
+          
+          .estrela:hover,
+          .estrela.active {
+            color: gold;
+          }
+          
+
+
+            <script>
+
+const estrelas = document.querySelectorAll('.estrela');
+const avaliacao = document.querySelector('.avaliacao');
+
+let avaliacaoAtual = 0; // Variável para rastrear a avaliação atual
+
+estrelas.forEach((estrela, index) => {
+  estrela.addEventListener('mouseover', () => {
+    const valor = estrela.getAttribute('data-valor');
+    avaliacao.setAttribute('data-avaliacao', valor);
+
+    for (let i = 0; i <= index; i++) {
+      estrelas[i].classList.add('active');
+    }
+
+    for (let i = index + 1; i < 5; i++) {
+      estrelas[i].classList.remove('active');
+    }
+  });
+
+  estrela.addEventListener('mouseout', () => {
+    for (let i = 0; i < avaliacaoAtual; i++) {
+      estrelas[i].classList.add('active');
+    }
+
+    for (let i = avaliacaoAtual; i < 5; i++) {
+      estrelas[i].classList.remove('active');
+    }
+  });
+
+  estrela.addEventListener('click', () => {
+    avaliacaoAtual = index + 1; // Atualiza a avaliação atual
+  });
+});
+
+  </script>
+
+
+
+
+
+          
